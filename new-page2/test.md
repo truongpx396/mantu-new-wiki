@@ -2,7 +2,7 @@
 title: New Test Page
 description: 
 published: true
-date: 2020-06-29T06:58:45.276Z
+date: 2020-06-29T06:59:07.860Z
 tags: architect
 editor: markdown
 ---
