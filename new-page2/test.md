@@ -2,7 +2,7 @@
 title: New Test Page
 description: 
 published: true
-date: 2020-06-29T06:42:43.807Z
+date: 2020-06-29T06:58:45.276Z
 tags: architect
 editor: markdown
 ---
@@ -31,6 +31,46 @@ Your content here
 ```
 
 `var example = "hello!";`
+
+```mermaid
+sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?
+```
+
+```plantuml
+Bob->Alice : hello
+```
+
+# Tabs {.tabset}
+## First Tab
+
+Any content here will go into the first tab...
+
+## Second Tab
+
+Any content here will go into the second tab...
+
+## Third Tab
+
+Any content here will go into the third tab...
+
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
+```
 
 # Big header
 ## Medium header
