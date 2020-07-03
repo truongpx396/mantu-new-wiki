@@ -2,7 +2,7 @@
 title: Mobile Development
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T06:31:30.629Z
+date: 2020-07-03T09:37:12.160Z
 tags: development
 editor: markdown
 ---
@@ -19,7 +19,7 @@ editor: markdown
 
 
 
-# 1. Mobile Development
+# 1. Foundation
 
 ## <span style='color:#e67e22;'> Why a standard architecture? </span>
 > Using a standard architecture across mobile application ease the communication among developer teams and knowledge sharing as everybody is familliar with the same concepts. 
@@ -31,7 +31,7 @@ editor: markdown
 
 ## Mobile Architecture
 - [:lock: Architecture *Standard architecture*](/mobile_erp/development/foundation/architecture)
-- [:lock: Standard *Coding standard*](/mobile_erp/development/foundation/packages)
+- [:lock: Standard *Coding standard*](/mobile_erp/development/foundation/standard)
 - [:lock: Tools *Analytic tools*](/mobile_erp/development/foundation/tools)
 {.links-list}
 
