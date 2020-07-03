@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description:  Standard architecture in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T06:16:18.837Z
+date: 2020-07-03T06:45:37.412Z
 tags: architecture
 editor: markdown
 ---
@@ -23,12 +23,11 @@ Every layer can only reference itself or the layer(s) just **directly** (not mor
 
 Next to these, there is one last layer, the *Cross* layer, which does not follow the previous constraints and is accessible by any other layer. Normally you do not need it in your application but be aware that it exists.
 
-![](~/images/layered-architecture.png)
+![layered-architecture.png](/layered-architecture.png)
 
 Development wise, each layer is implemented in a different project.
 
-![](~/images/layer-implementation.png)
-
+![layer-implementation.png](/layer-implementation.png)
 
 ### <span style='color:#424241;'> Layers </span>
 
@@ -65,7 +64,8 @@ The **Layered Architecture** is not opposed to design patterns.
 
 In the contrary, the main mobile design patterns, **MVC**, **MVP** and **MVVM**, can be refleted in this architecture as illustrated bellow.
 
-![](~/images/layered-architecture-correspondance-design-patterns.png)
+
+![layered-architecture-correspondance-design-patterns.png](/layered-architecture-correspondance-design-patterns.png)
 
 # 2. Shared Code Strategy
 ## <span style='color:#e67e22;'> Solution structure </span>
@@ -75,7 +75,9 @@ The implementation of the **View** and its associated logic management domain, t
 
 Thus, only the **Model** formed by the **BLL** and the layers below can be fully shared across mobile frameworks using **.NET Standard** projects.
 
-![](~/images/layered-architecture-projects.png)
+
+![layered-architecture-projects.png](/layered-architecture-projects.png)
+
 ## <span style='color:#e67e22;'> Model implementation </span>
 ### <span style='color:#424241;'> BLL </span>
 This layer contains classes to manage the data logic by interacting with the **SAL** and the **DAL**. 
@@ -99,7 +101,7 @@ This layer is directly implemented on the [LocalDatabase](https://arp.amaris.com
 ## <span style='color:#e67e22;'> Real development </span>
 Eventually, only 3 layers require to be implemented on every mobile application plus the **DAL** in case of local database support.
 
-![](~/images/layers-to-implement.png)
+![layers-to-implement.png](/layers-to-implement.png)
 
 # 3. Module Division
 ## <span style='color:#e67e22;'> Definitions </span>
@@ -129,15 +131,19 @@ To answer to these challenges, we put in place the concepts of **App** and **Mod
 
 Thus, one App can contain several independent Modules, where the Modules are embedding all the feature related to the corresponding Module of the Product.
 
-![](~/images/modules_organization.png)
+
+![modules_organization.png](/modules_organization.png)
+
 ## <span style='color:#e67e22;'> Implementation </span>
 The [AmarisCoreApp and AmarisCoreModule](https://arp.amaris.com/Wiki/Wiki/Preview/524?fileId=4943) classes were created to implement this concept. They enable you to associate a **Module** to a specific assembly and **Modules** to a specific **App**.
 
 Thanks to them, the Module codes can be decoupled, set on separate projects and the data regarding the code ownership can be retrieved thanks to its assembly. The code owned by the App should only reference the main container of the mobile application.
-![](~/images/modules_comparison.png)
+
+![modules_comparison.png](/modules_comparison.png)
 
 Combine with the **Layered Architecture**, each module is implementing its necessary layers.
-![](~/images/modules-full-structure.png)
+
+![modules-full-structure.png](/modules-full-structure.png)
 
 # 4. Low Coupling
 ## <span style='color:#e67e22;'> Dependency Injection </span>
