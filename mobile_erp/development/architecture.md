@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T04:31:03.315Z
+date: 2020-07-03T04:38:20.717Z
 tags: architecture
 editor: markdown
 ---
@@ -40,6 +40,7 @@ editor: markdown
 - [:lock: Internal *Internal packages*](/mobile_erp/development/architecture)
 - [:lock: Native services *Native Service packages*](/mobile_erp/development/architecture)
 - [:lock: Tools *Tools for packages*](/mobile_erp/development/architecture)
+- [:lock: Contract *Packages Contract*](/mobile_erp/development/architecture)
 {.links-list}
 
 ### Core packages
@@ -60,13 +61,26 @@ Any content here will go into the third tab...
 ## UWP
 
 Any content here will go into the third tab...
-- [:lock: Contract *description*](/mobile_erp/development/architecture)
-{.links-list}
+
 
 # 2. Form
+- [:lock: Form Architecture *Form Architecture*](/mobile_erp/development/architecture)
+{.links-list}
 # 3. Android
+- [:lock: Android Architecture *Android Architecture*](/mobile_erp/development/architecture)
+{.links-list}
 # 4. IOS
+# Tabs {.tabset}
+## iOS Architecture
+
+Any content here will go into the first tab...
+
+## iOS Features Implementation
+
+Any content here will go into the second tab...
 # 5. UWP
+- [:lock: UWP Architecture *UWP Architecture*](/mobile_erp/development/architecture)
+{.links-list}
 
 
 
