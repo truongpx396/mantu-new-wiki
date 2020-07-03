@@ -2,7 +2,7 @@
 title: Tools
 description: Tools for mobile development
 published: true
-date: 2020-07-03T09:52:05.516Z
+date: 2020-07-03T10:03:56.039Z
 tags: tools, analytics
 editor: markdown
 ---
@@ -25,7 +25,7 @@ Go to [App Center](https://appcenter.ms/) and login with your ERP account creden
 
 Then you need to become part of the *Mantu* **organization**, send an email at [appcenter@mantu.com](mailto:appcenter@mantu.com) so administrators will add you to the organization.   
 
-![](~/3.-tools/organization.png)  
+![organization.png](/mobile_erp/organization.png)
 
 ### <span style='color:#424241;'>Accessing to an app</span>
 
@@ -39,7 +39,7 @@ ask at [appcenter@mantu.com](mailto:appcenter@mantu.com) or the app **managers**
 If the app does not exist, you need to [create one](https://docs.microsoft.com/en-us/appcenter/dashboard/creating-and-managing-apps).
 When doing so, ensure the owner is the *Mantu* **organization**, not yourself.  
 
-![](~/3.-tools/addapp.png)  
+![addapp.png](/mobile_erp/addapp.png)
 
 Moreover, use the following naming format for your application:
 *   `<app_name>` for production environment
