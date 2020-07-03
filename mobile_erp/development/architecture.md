@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T04:19:22.734Z
+date: 2020-07-03T04:22:11.741Z
 tags: architecture
 editor: markdown
 ---
