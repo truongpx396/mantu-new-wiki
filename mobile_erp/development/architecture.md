@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T06:25:15.839Z
+date: 2020-07-03T06:55:09.996Z
 tags: architecture
 editor: markdown
 ---
@@ -19,7 +19,7 @@ editor: markdown
 
 
 
-# 1. Mobile Development
+# 1. Foundation
 
 ## <span style='color:#e67e22;'> Why a standard architecture? </span>
 > Using a standard architecture across mobile application ease the communication among developer teams and knowledge sharing as everybody is familliar with the same concepts. 
