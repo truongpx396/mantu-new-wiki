@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T04:22:11.741Z
+date: 2020-07-03T04:31:03.315Z
 tags: architecture
 editor: markdown
 ---
@@ -30,16 +30,16 @@ editor: markdown
 {.is-success}
 
 ## Mobile Architecture
-- [:lock: Architecture *Standard architecture as well as our best practices*](/mobile_erp/development/architecture)
-- [:lock: Standard *description*](/mobile_erp/development/architecture)
-- [:lock: Tools *description*](/mobile_erp/development/architecture)
+- [:lock: Architecture *Standard architecture*](/mobile_erp/development/architecture)
+- [:lock: Standard *Coding standard*](/mobile_erp/development/architecture)
+- [:lock: Tools *Analytic tools*](/mobile_erp/development/architecture)
 {.links-list}
 
 ## Packages
 
-- [:lock: Internal *Standard architecture as well as our best practices*](/mobile_erp/development/architecture)
-- [:lock: Native services *description*](/mobile_erp/development/architecture)
-- [:lock: Tools *description*](/mobile_erp/development/architecture)
+- [:lock: Internal *Internal packages*](/mobile_erp/development/architecture)
+- [:lock: Native services *Native Service packages*](/mobile_erp/development/architecture)
+- [:lock: Tools *Tools for packages*](/mobile_erp/development/architecture)
 {.links-list}
 
 ### Core packages
@@ -60,9 +60,6 @@ Any content here will go into the third tab...
 ## UWP
 
 Any content here will go into the third tab...
-
-#
-
 - [:lock: Contract *description*](/mobile_erp/development/architecture)
 {.links-list}
 
@@ -71,12 +68,6 @@ Any content here will go into the third tab...
 # 4. IOS
 # 5. UWP
 
-
-## Development
-## Formatting
-## Versioning
-
-## Analytics
 
 
 
