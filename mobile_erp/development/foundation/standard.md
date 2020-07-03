@@ -2,7 +2,7 @@
 title: Coding Standard
 description: Standard for Mobile Development
 published: true
-date: 2020-07-03T09:59:22.617Z
+date: 2020-07-03T10:01:14.185Z
 tags: standard, clean code
 editor: markdown
 ---
