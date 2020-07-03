@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T06:55:09.996Z
+date: 2020-07-03T09:36:01.836Z
 tags: architecture
 editor: markdown
 ---
@@ -31,7 +31,7 @@ editor: markdown
 
 ## Mobile Architecture
 - [:lock: Architecture *Standard architecture*](/mobile_erp/development/foundation/architecture)
-- [:lock: Standard *Coding standard*](/mobile_erp/development/foundation/packages)
+- [:lock: Standard *Coding standard*](/mobile_erp/development/foundation/standard)
 - [:lock: Tools *Analytic tools*](/mobile_erp/development/foundation/tools)
 {.links-list}
 
