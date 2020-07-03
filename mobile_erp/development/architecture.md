@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-02T05:16:16.016Z
+date: 2020-07-03T03:01:13.387Z
 tags: architecture
 editor: markdown
 ---
@@ -29,3 +29,10 @@ Moreover, it facilitates the mobility of one developer from one project to anoth
 ## Versioning
 # 3. Tools
 ## Analytics
+
+
+
+> [architecture](/mobile_erp/development/architecture)`test`
+{.is-link}
+
+<li><a href="/install/requirements" class="is-internal-link is-valid-page">Requirements <em>Server and database prerequisites.</em></a></li>
