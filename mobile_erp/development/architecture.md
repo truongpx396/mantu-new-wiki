@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T04:03:53.956Z
+date: 2020-07-03T04:19:22.734Z
 tags: architecture
 editor: markdown
 ---
@@ -61,7 +61,7 @@ Any content here will go into the third tab...
 
 Any content here will go into the third tab...
 
-
+#
 
 - [:lock: Contract *description*](/mobile_erp/development/architecture)
 {.links-list}
