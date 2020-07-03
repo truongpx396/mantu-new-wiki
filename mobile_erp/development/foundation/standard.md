@@ -2,7 +2,7 @@
 title: Coding Standard
 description: Standard for Mobile Development
 published: true
-date: 2020-07-03T09:39:27.043Z
+date: 2020-07-03T09:59:22.617Z
 tags: standard, clean code
 editor: markdown
 ---
@@ -155,11 +155,11 @@ Any request to special permission has to be clearly explained to the users.
 
 <span style='color:#e62222;'>Bad</span>
 
-![](~/images/Bad-Permission.png)
+![bad-permission.png](/mobile_erp/bad-permission.png)
 
 <span style='color:#22e62a;'>Good</span>
 
-![](~/images/Good-Permission.png)
+![good-permission.png](/mobile_erp/good-permission.png)
 
 # Formatting
 
@@ -268,7 +268,7 @@ public class Test
 
 The code of every mobile application has to be in the TFS repository of its associated Product.
 
-![](~/images/tfs_repository.png)
+![tfs_repository.png](/mobile_erp/tfs_repository.png)
 
 Every mobile application repository has to have at least the 3 following branch, to track the code:
 * `prod` with the code of the current PROD application
