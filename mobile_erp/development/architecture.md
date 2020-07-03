@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description: Standard architecture as well as our best practices in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T04:38:20.717Z
+date: 2020-07-03T06:25:15.839Z
 tags: architecture
 editor: markdown
 ---
@@ -30,17 +30,17 @@ editor: markdown
 {.is-success}
 
 ## Mobile Architecture
-- [:lock: Architecture *Standard architecture*](/mobile_erp/development/architecture)
-- [:lock: Standard *Coding standard*](/mobile_erp/development/architecture)
-- [:lock: Tools *Analytic tools*](/mobile_erp/development/architecture)
+- [:lock: Architecture *Standard architecture*](/mobile_erp/development/foundation/architecture)
+- [:lock: Standard *Coding standard*](/mobile_erp/development/foundation/packages)
+- [:lock: Tools *Analytic tools*](/mobile_erp/development/foundation/tools)
 {.links-list}
 
 ## Packages
 
-- [:lock: Internal *Internal packages*](/mobile_erp/development/architecture)
-- [:lock: Native services *Native Service packages*](/mobile_erp/development/architecture)
-- [:lock: Tools *Tools for packages*](/mobile_erp/development/architecture)
-- [:lock: Contract *Packages Contract*](/mobile_erp/development/architecture)
+- [:lock: Internal *Internal packages*](/mobile_erp/development/foundation/architecture)
+- [:lock: Native services *Native Service packages*](/mobile_erp/development/foundation/architecture)
+- [:lock: Tools *Tools for packages*](/mobile_erp/development/foundation/architecture)
+- [:lock: Contract *Packages Contract*](/mobile_erp/development/foundation/architecture)
 {.links-list}
 
 ### Core packages
