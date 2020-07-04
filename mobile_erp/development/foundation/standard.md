@@ -2,7 +2,7 @@
 title: Coding Standard
 description: Standard for Mobile Development
 published: true
-date: 2020-07-04T04:47:16.355Z
+date: 2020-07-04T05:10:51.861Z
 tags: standard, clean code
 editor: markdown
 ---
@@ -164,9 +164,13 @@ Any request to special permission has to be clearly explained to the users.
 # Formatting
 
 ## <span style='color:#e67e22;'> EditorConfig </span>
-Add an **.editorconfig** file with the default .NET code style, formatting, and naming conventions to your solution to ensure code consistency.  Set it up by checking the [Microsoft documentation](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options?view=vs-2019).
+> Add an **.editorconfig** file with the default .NET code style, formatting, and naming conventions to your solution to ensure code consistency.  Set it up by checking the [Microsoft documentation](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options?view=vs-2019).
+{.is-info}
+
 ## <span style='color:#e67e22;'> Unused code </span>
-Remove unused references and code from your project as well as commented code.
+> Remove unused references and code from your project as well as commented code.
+{.is-success}
+
 ## <span style='color:#e67e22;'> Line break </span>
 Do not use more than one line break at a time.
 
@@ -191,14 +195,18 @@ Do not use more than one line break at a time.
 }
 ```
 ## <span style='color:#e67e22;'> Naming convention </span>
-Look up the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/xzf533w0(v=vs.71)) for all the rules regarding naming conventions.
+> Look up the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/xzf533w0(v=vs.71)) for all the rules regarding naming conventions.
+{.is-info}
+
 
 Keep in mind the following rules when looking for a variable or method name:
 * Use explicit name
 * Use proper English
 * Use camel case style
 
-Example: Name for an object containing all the data related to an event:
+> Example: Name for an object containing all the data related to an event:
+{.is-success}
+
 
 <span style='color:#e62222;'>**Bad**</span>
 * EvntOverview
@@ -228,7 +236,9 @@ public enum EventType
 }
 ```
 ## <span style='color:#e67e22;'> Code region </span>
-Use regions to organize your code within a file, following this order:
+> Use regions to organize your code within a file, following this order:
+{.is-info}
+
 * Static Public Properties
 * Static Public Methods
 * Static Private Properties 
