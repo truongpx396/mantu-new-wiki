@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description:  Standard architecture in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-04T04:44:43.951Z
+date: 2020-07-04T05:05:06.952Z
 tags: architecture
 editor: markdown
 ---
@@ -111,7 +111,9 @@ The models in this layer should have the suffix *Local*.
 This layer is directly implemented on the [LocalDatabase](https://arp.amaris.com/Wiki/Wiki/Preview/524?fileId=4682) package and you don't need to implement it in your project.
 
 ## <span style='color:#e67e22;'> Real development </span>
-Eventually, only 3 layers require to be implemented on every mobile application plus the **DAL** in case of local database support.
+> Eventually, only 3 layers require to be implemented on every mobile application plus the **DAL** in case of local database support.
+{.is-success}
+
 
 ![layers-to-implement.png](/images/mobile_erp/development/foundation/layers-to-implement.png)
 
