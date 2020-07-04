@@ -2,7 +2,7 @@
 title: Mobile Architecture
 description:  Standard architecture in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-04T04:39:16.332Z
+date: 2020-07-04T04:40:07.560Z
 tags: architecture
 editor: markdown
 ---
@@ -32,7 +32,7 @@ editor: markdown
 
 
 
-![layered-architecture.png](/images/images/mobile_erp/development/foundation/layered-architecture.png)
+![layered-architecture.png](/images/mobile_erp/development/foundation/layered-architecture.png)
 
 Development wise, each layer is implemented in a different project.
 
