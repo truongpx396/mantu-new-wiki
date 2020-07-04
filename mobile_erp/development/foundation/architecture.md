@@ -2,14 +2,16 @@
 title: Mobile Architecture
 description:  Standard architecture in order to insure code quality and consistency across the mobile platforms
 published: true
-date: 2020-07-03T06:45:37.412Z
+date: 2020-07-04T04:27:10.837Z
 tags: architecture
 editor: markdown
 ---
 
 # 1. Layered Architecture
 ## <span style='color:#e67e22;'> Why this architecture?</span>
-This architecture is closely inspired from the [Microsoft architecture guidelines](https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/) and enables to:
+> This architecture is closely inspired from the [Microsoft architecture guidelines](https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/) and enables to:
+{.is-info}
+
 * Maximize code sharing
 * Split the responsabilty across the application to improve maintainabiltiy and reusability
 * Keep logic localized
@@ -17,11 +19,17 @@ This architecture is closely inspired from the [Microsoft architecture guideline
 ## <span style='color:#e67e22;'> Description </span>
 ### <span style='color:#424241;'> Structure </span>
 
-This architecture is divided into 7 main layers, each of them being in charge of a specifc scope of the application. 
+> This architecture is divided into 7 main layers, each of them being in charge of a specifc scope of the application. 
+{.is-info}
 
-Every layer can only reference itself or the layer(s) just **directly** (not more than one level) below it.
 
-Next to these, there is one last layer, the *Cross* layer, which does not follow the previous constraints and is accessible by any other layer. Normally you do not need it in your application but be aware that it exists.
+> Every layer can only reference itself or the layer(s) just **directly** (not more than one level) below it.
+{.is-warning}
+
+
+> Next to these, there is one last layer, the *Cross* layer, which does not follow the previous constraints and is accessible by any other layer. Normally you do not need it in your application but be aware that it exists.
+{.is-success}
+
 
 ![layered-architecture.png](/layered-architecture.png)
 
@@ -60,7 +68,9 @@ It contains the models and managers to manipulate data from the local database. 
 It contains the local database communication engine.
 
 ## <span style='color:#e67e22;'> Design patterns </span>
-The **Layered Architecture** is not opposed to design patterns.
+> The **Layered Architecture** is not opposed to design patterns.
+{.is-info}
+
 
 In the contrary, the main mobile design patterns, **MVC**, **MVP** and **MVVM**, can be refleted in this architecture as illustrated bellow.
 
@@ -69,7 +79,9 @@ In the contrary, the main mobile design patterns, **MVC**, **MVP** and **MVVM**,
 
 # 2. Shared Code Strategy
 ## <span style='color:#e67e22;'> Solution structure </span>
-The IT Mobile Factory is relying on the **.Net Ecosystem** with [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) and [Xamarin](https://docs.microsoft.com/en-us/xamarin/cross-platform/) in order to maximize the amount of shared code across different mobile platforms.
+> The IT Mobile Factory is relying on the **.Net Ecosystem** with [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) and [Xamarin](https://docs.microsoft.com/en-us/xamarin/cross-platform/) in order to maximize the amount of shared code across different mobile platforms.
+{.is-info}
+
 
 The implementation of the **View** and its associated logic management domain, the **Presenter** or **ViewModel**, are directly related to the SDK of different mobile framework.
 
@@ -106,7 +118,9 @@ Eventually, only 3 layers require to be implemented on every mobile application 
 # 3. Module Division
 ## <span style='color:#e67e22;'> Definitions </span>
 ### <span style='color:#424241;'> Product Interface </span>
-A **Product Interface** is a unique combination of software and hardware enabling users to access IT services.
+> A **Product Interface** is a unique combination of software and hardware enabling users to access IT services.
+{.is-info}
+
 
 Today, there are 3 main types of interfaces in Mantu:
 * Web app for computer
@@ -116,14 +130,18 @@ Today, there are 3 main types of interfaces in Mantu:
 In today's organization, there is only one interface of each type per **Product**.
 
 ### <span style='color:#424241;'> Products and Modules </span>
-**Products** are independent sets of features answering to specific business challenges. Due to their complexity, Products are sub-divided in **Modules** focusing on smaller business scopes. 
+> **Products** are independent sets of features answering to specific business challenges. Due to their complexity, Products are sub-divided in **Modules** focusing on smaller business scopes. 
+{.is-info}
+
 
 The development of each Module is under the responsibility of a **SCRUM team**.
 
 The exhaustive list of our Products and Modules is available on the [Product Catalogue](https://arp.amaris.com/HouseOfApps/Products).
 
 ### <span style='color:#424241;'> Apps and Modules </span>
-Putting both concepts together, it appears that the feature of the same mobile app can be associated to different Modules. This creates several challenges:
+> Putting both concepts together, it appears that the feature of the same mobile app can be associated to different Modules. This creates several challenges:
+{.is-info}
+
 * How to identify the **SCRUM team** to contact in case of a bug or feedback on the app?
 * How to enable parallel **Module** development on the same mobile app? 
 
@@ -135,7 +153,9 @@ Thus, one App can contain several independent Modules, where the Modules are emb
 ![modules_organization.png](/modules_organization.png)
 
 ## <span style='color:#e67e22;'> Implementation </span>
-The [AmarisCoreApp and AmarisCoreModule](https://arp.amaris.com/Wiki/Wiki/Preview/524?fileId=4943) classes were created to implement this concept. They enable you to associate a **Module** to a specific assembly and **Modules** to a specific **App**.
+> The [AmarisCoreApp and AmarisCoreModule](https://arp.amaris.com/Wiki/Wiki/Preview/524?fileId=4943) classes were created to implement this concept. They enable you to associate a **Module** to a specific assembly and **Modules** to a specific **App**.
+{.is-info}
+
 
 Thanks to them, the Module codes can be decoupled, set on separate projects and the data regarding the code ownership can be retrieved thanks to its assembly. The code owned by the App should only reference the main container of the mobile application.
 
@@ -147,12 +167,16 @@ Combine with the **Layered Architecture**, each module is implementing its neces
 
 # 4. Low Coupling
 ## <span style='color:#e67e22;'> Dependency Injection </span>
-The **Dependency Injection** design pattern is used in order to improve maintainabiltiy and reusability of the code produced. For more details, refer to the [Microsoft documentation](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/dependency-injection).
+> The **Dependency Injection** design pattern is used in order to improve maintainabiltiy and reusability of the code produced. For more details, refer to the [Microsoft documentation](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/dependency-injection).
+{.is-info}
+
 
 This pattern can be implemented with the [ServiceLocator]( https://arp.amaris.com/Wiki/Wiki/Preview/524?fileId=4943) class which is relying on the [Autofac](https://autofac.org/) technology.
 
 The interfaces defined for the Dependency Injection pattern have to follow the naming  `I<class_name>Contract`.
 ## <span style='color:#e67e22;'>  Unit Testing </span>
-Unit tests enable you to easily secure the technical quality of an application and can be easily implemented on code using the **Dependency Injection** pattern. 
+> Unit tests enable you to easily secure the technical quality of an application and can be easily implemented on code using the **Dependency Injection** pattern. 
+{.is-info}
+
 
 Refer to the [Microsoft documentation](https://docs.microsoft.com/en-us/dotnet/core/testing/) for details on unit test implementation with **xUnit**.
